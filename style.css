@@ -1,0 +1,195 @@
+html{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+  .header{
+    text-align: center;
+    margin: auto;
+    background-color:rgb(245, 8, 213);
+  }
+  .header_logo{
+    width: 5em;
+    height: auto;
+  }
+  #hamburguer{
+    background-color:rgb(12, 1, 10) ;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 2em;
+  }
+  .header-nav{
+    background-color:rgb(90, 197, 240);
+    display: none;
+  }
+  .header-nav.show{
+    display: block;
+  }
+  ul{
+    margin: 0;
+  }
+  .header-nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8;
+  }
+  .header-nav a{
+    color: rgb(48, 20, 5);
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+  }
+  .header-nav a:hover{
+    background-color: color-mix(in srgb,pink ,#f5f3fa  50%)
+  }
+
+  @media screen and (min-width: 48em){
+    #hamburguer{
+      display: none;
+    }
+    .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(90, 197, 240);
+    }
+    .header_logo{
+      margin-left: 2em;
+    }
+    .header-nav{
+      display: block;
+    }
+    .header-nav ul{
+      margin-right: 2em;
+      font-size: .9em;
+    }
+    .header-nav li{
+      display: inline-block;
+    }
+    .header-nav a{
+      border-radius: 5px;
+    }
+    .header-nav a:hover{
+      background-color: white;
+      color:rgb(245, 8, 213);
+    }
+  }
+  .trailer{
+    background-color: #e4f2eb;
+    padding-bottom: 1.5em ;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.5em;
+}
+.trailer div{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+.trailer_title{
+    margin-top: 0;
+    padding-top: .5em;
+    color: black;
+}
+.trailer h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+.trailer_paragrafo{
+    font-size: 1.1em;
+}
+
+.trailer_botao{
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: pink;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.trailer_botao:hover{
+    background-color: pink;
+}
+.trailer__video{
+    display: none;
+}
+@media screen and (min-width:48em){
+    .trailer_botao{
+        display: none;
+}
+
+    .trailer{
+        background-image: url(imagens/fundodohead.jpg);
+        background-size: cover;
+        background-position:  left top;
+        background-repeat: no-repeat;
+        background-color: initial;
+        height: 100vh;
+    }
+    .trailer__video{
+        display: block;
+    }
+    .trailer__video-tamanho{
+        border-radius:.8em ;
+        border-bottom: 1em;
+    }
+}
+.trailer_paragrafo{
+    margin-bottom: 2em;
+}
+
+footer{
+  background-color: rgb(90, 197, 240);
+  padding: 1em;
+  text-align: center;
+}
+
+.logo_footer{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.tamanho{
+  width: 2.5em;
+}
+
+.texto_footer{
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin:0;
+  padding-top: .8rem;
+  color: #0D0D0D;
+}
+@media screen and (min-width: 48em){/*768px maior que*/
+  .logo_footer{
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5em;
+  }
+}
+
+/*@media screen and (min-width: 48em){/*768px maior que
+  essa conf. para responsividade, qdo a largura da tela for maior que 768px
+  os icones ficaram em linha(flex-direction:row  e não coluna*/
+
+
+
+/*para ajustar a imagem dentro do main
+coloque uma section class no html uma classe  fundo_main
+no css
+.fundo_main{
+  background-image: url('');
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}*/
